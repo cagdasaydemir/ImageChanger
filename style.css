@@ -1,3 +1,12 @@
+:root {
+  --red: #CD212A;
+  --darkred: #781116;
+  --yellow: #FFF200;
+  --green: #008C45;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -27,8 +36,8 @@ img {
 }
 img.show {
   display: block;
-  max-height: 100vh;
-  max-width: 100vw;
+  max-height: 75vh;
+  max-width: 75vw;
   border-radius: 30px;
 }
 .console {
@@ -42,40 +51,46 @@ img.show {
 .nextBtn {
   display: flex;
   align-items: center;
-  width: 25vw;
+  width: 35vw;
   justify-content: center;
+  
 }
 .fa-solid {
   border: none;
-  color: rgb(122, 122, 122);
+  color: var(--green);
 }
 .nav {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  margin-bottom: 5vh;
+  margin-bottom: 1vh;
   align-self: flex-end;
   justify-content: center;
 }
 .dotbtn {
-  border: 2px solid rgba(0, 0, 0, 0.459);
+  border: 2px solid var(--darkred);
   border-radius: 50%;
-  background-color: rgba(236, 236, 236, 0.219);
-  color: rgba(0, 0, 0, 0.739);
+  
+  color: var(--black);
   text-align: center;
-  width: 25px;
-  height: 25px;
-  margin: 0.5rem;
+  background-color: var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin: 8px;
   cursor: pointer;
 }
 .active {
-  border: 2px solid rgba(0, 0, 0, 0.459);
-  border-radius: 50%;
-  background-color: rgba(233, 10, 10, 0.452);
+  border: 2px solid var(--red);
+  border-radius: 0;
+ background-color: var(--yellow);
   color: rgba(0, 0, 0, 0.739);
   text-align: center;
-  width: 25px;
-  height: 25px;
-  margin: 0.5rem;
+  width: 20px;  
+  margin-left: 13px;
+  margin-right: 13px;
   cursor: pointer;
 }
+
