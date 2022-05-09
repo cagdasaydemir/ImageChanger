@@ -12,34 +12,40 @@ body {
   padding: 0;
   overflow: hidden;
 }
+
 .hero {
   height: 100vh;
   width: 100vw;
   position: relative;
 }
+
 .container {
   height: inherit;
   width: inherit;
 }
+
 .scenes__container {
   position: absolute;
-
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+
 img {
   display: none;
   max-height: 100vh;
   max-width: 100vw;
 }
+
 img.show {
   display: block;
   max-height: 75vh;
   max-width: 75vw;
   border-radius: 30px;
+  box-shadow: 0px 100px 10000000px 100px var(--black);
 }
+
 .console {
   position: relative;
   height: inherit;
@@ -47,30 +53,63 @@ img.show {
   display: flex;
   justify-content: space-between;
 }
+
 .prevBtn,
 .nextBtn {
   display: flex;
   align-items: center;
   width: 35vw;
   justify-content: center;
-  
 }
+.bigLogoBtn{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+ }
+ .ferrariEmblem{
+  position: relative;
+  display: flex;
+ height: 500px;
+
+}
+.bigLogoBtn.small{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  align-items: baseline;
+  
+ }
+.ferrariEmblem.small{
+  position: relative;
+  display: flex;
+ height: 75px;
+ margin-top: 15px;
+
+}
+
 .fa-solid {
   border: none;
   color: var(--green);
 }
+
 .nav {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  margin-bottom: 1vh;
   align-self: flex-end;
   justify-content: center;
 }
+
 .dotbtn {
   border: 2px solid var(--darkred);
   border-radius: 50%;
-  
   color: var(--black);
   text-align: center;
   background-color: var(--red);
@@ -82,15 +121,15 @@ img.show {
   margin: 8px;
   cursor: pointer;
 }
+
 .active {
   border: 2px solid var(--red);
   border-radius: 0;
- background-color: var(--yellow);
+  background-color: var(--yellow);
   color: rgba(0, 0, 0, 0.739);
   text-align: center;
-  width: 20px;  
+  width: 20px;
   margin-left: 13px;
   margin-right: 13px;
   cursor: pointer;
 }
-

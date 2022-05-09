@@ -2,6 +2,16 @@ const scenes_container = document.querySelector(".scenes__container");
 const sceneImages = Array.from(scenes_container.children);
 const navHTML = document.querySelector(".nav");
 const ferrariLogo = `<object id="ferrariLogo" data="assets\\ferrariLogo.svg" ></object>`
+const bigLogoBtn = document.querySelector(".bigLogoBtn");
+const ferrariEmblem = document.querySelector("#ferrariEmblem");
+console.log(ferrariEmblem);
+
+const intro = () => {
+  ferrariEmblem.classList.toggle("small");
+  bigLogoBtn.classList.toggle("small");
+}
+
+
 const nextImg = () => {
   const currentImg = document.querySelector(".show");
   const nextImg = currentImg.nextElementSibling;
