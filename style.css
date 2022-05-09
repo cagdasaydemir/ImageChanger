@@ -61,7 +61,8 @@ img.show {
   width: 35vw;
   justify-content: center;
 }
-.bigLogoBtn{
+
+.bigLogoBtn {
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -69,28 +70,29 @@ img.show {
   justify-content: center;
   align-items: center;
   background-color: var(--black);
- }
- .ferrariEmblem{
+}
+
+.ferrariEmblem {
   position: relative;
   display: flex;
- height: 500px;
-
+  height: 500px;
 }
-.bigLogoBtn.small{
+
+.bigLogoBtn.small {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  width: 0vw;
+  height: 0vh;
   display: flex;
   justify-content: center;
   background-color: transparent;
   align-items: baseline;
-  
- }
-.ferrariEmblem.small{
-  position: relative;
-  display: flex;
- height: 75px;
- margin-top: 15px;
+}
+
+.ferrariEmblem.small {
+  position: absolute;
+  height: 75px;
+  margin-top: 15px;
+  margin-left: 100vw;
 
 }
 
