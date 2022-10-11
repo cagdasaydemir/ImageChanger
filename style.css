@@ -13,18 +13,13 @@ body {
   overflow: hidden;
 }
 
-.hero {
+#layout {
   height: 100vh;
   width: 100vw;
   position: relative;
 }
 
-.container {
-  height: inherit;
-  width: inherit;
-}
-
-.scenes__container {
+#container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -38,7 +33,7 @@ img {
   max-width: 100vw;
 }
 
-img.show {
+img.current {
   display: block;
   max-height: 75vh;
   max-width: 75vw;
@@ -46,7 +41,7 @@ img.show {
   box-shadow: 0px 100px 10000000px 100px var(--black);
 }
 
-.console {
+#console {
   position: relative;
   height: inherit;
   width: inherit;
@@ -54,15 +49,15 @@ img.show {
   justify-content: space-between;
 }
 
-.prevBtn,
-.nextBtn {
+#prevBtn,
+#nextBtn {
   display: flex;
   align-items: center;
   width: 35vw;
   justify-content: center;
 }
 
-.bigLogoBtn {
+#introLogo {
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -78,7 +73,7 @@ img.show {
   height: 500px;
 }
 
-.bigLogoBtn.small {
+#introLogo.small {
   position: absolute;
   width: 0vw;
   height: 0vh;
@@ -101,7 +96,7 @@ img.show {
   color: var(--green);
 }
 
-.nav {
+#nav {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
